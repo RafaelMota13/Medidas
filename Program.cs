@@ -1,11 +1,15 @@
-﻿Console.ForegroundColor = ConsoleColor.DarkGreen;
-Console.WriteLine("\n--- Equivalência ---");
-Console.ResetColor();
+﻿double cm, m ,km;
+Console.Write("Entre com a medida (em metros): ");
+m = Convert.ToDouble(Console.ReadLine());
 
-Console.Write("Entre com a medida (em milhas): ");
-double milhas = Convert.ToDouble(Console.ReadLine());
+cm = m * 100;
+km = m / 1000;
+
+Console.WriteLine("\n--- Equivalência ---\n");
+Console.WriteLine($"{cm} cm");
+Console.WriteLine($"{m} m");
+Console.WriteLine($"{km} km");
 
 
-double km = milhas * 1.609;
 
-Console.WriteLine($"{km:N3} Km");
+
